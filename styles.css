@@ -1,0 +1,200 @@
+/* Réinitialisation des marges et des paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Bannière principale */
+.banner {
+    background: url('banniere1.jpg') no-repeat center center/cover; /* Remplacer par l'image de ta bannière */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.banner .cta-button {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.banner .cta-button:hover {
+    background-color: #e55a00;
+}
+
+/* Sections des produits */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.product-item .add-to-cart-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.product-item .add-to-cart-button:hover {
+    background-color: #218838;
+}
+
+.product-item .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+#cart {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#cart-items div {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#checkout-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #218838;
+}

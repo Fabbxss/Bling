@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bling Bling Shop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Fichier CSS externe -->
+    <meta name="description" content="Bling Bling Shop - Vente de chaussures, chaussettes et accessoires stylés.">
+    <meta property="og:title" content="Bling Bling Shop">
+    <meta property="og:description" content="Découvrez les dernières nouveautés en chaussures et accessoires !">
+    <meta property="og:image" content="url_de_votre_image_de_partage">
+    <meta property="og:url" content="url_de_votre_site">
+
+</head>
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <h1>Bling Bling Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Chaussures</a></li>
+                <li><a href="#">Chaussettes</a></li>
+                <li><a href="#">Accessoires</a></li>
+                <li><a href="#">Panier</a></li>
+                <li><a href="#" id="view-cart">Voir le Panier</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bannière principale -->
+    <section class="banner">
+        <h2>Découvrez notre nouvelle collection</h2>
+        <p>Chaussures, chaussettes et accessoires stylés pour toutes les occasions.</p>
+        <a href="#" class="cta-button">Acheter maintenant</a>
+    </section>
+
+   <!-- Section des produits -->
+   <section class="featured-products">
+    <h2>Nouveautés</h2>
+    <div class="product-list">
+        <!-- Exemple de produit -->
+        <div class="product-item">
+            <img src="chaussure.jpg" alt="Chaussure stylée">
+            <h3>Jordan 4</h3>
+            <p>14000fcfa</p>
+            <a href="#" class="add-to-cart-button">Ajouter au panier</a>
+        </div>
+    
+    <div class="product-list">
+        <!-- Exemple de produit -->
+        <div class="product-item">
+            <img src="chaussure2.jpg" alt="Chaussure stylée">
+            <h3>Air force 1</h3>
+            <p>10000fcfa</p>
+            <a href="#" class="add-to-cart-button">Ajouter au panier</a>
+        </div>
+        <!-- Ajouter d'autres produits ici -->
+    </div>
+    <div class="product-list">
+        <!-- Exemple de produit -->
+        <div class="product-item">
+            <img src="chaine.jpg" alt="Chaine stylée">
+            <h3>Graine de cafe</h3>
+            <p>3000fcfa</p>
+            <a href="#" class="add-to-cart-button">Ajouter au panier</a>
+        </div>
+        <!-- Ajouter d'autres produits ici -->
+    </div>
+</section>
+
+    <!-- Section des promotions -->
+    <section class="promotions">
+        <h2>Promotions</h2>
+        <div class="product-list">
+            <!-- Exemple de produit en promotion -->
+            <div class="product-item">
+                <img src="chaussette.jpg" alt="Chaussettes colorées">
+                <h3>Chaussettes Colorées</h3>
+                <p><span class="old-price">1500fcfa</span> 1000fcfa</p>
+                <a href="#" class="add-to-cart-button">Ajouter au panier</a>
+            </div>
+            <div class="product-list">
+                <!-- Exemple de produit en promotion -->
+                <div class="product-item">
+                    <img src="chaussure1.jpg" alt="Chaussures colorées">
+                    <h3>Jordan 1</h3>
+                    <p><span class="old-price">12000fcfa</span> 10000fcfa</p>
+                    <a href="#" class="add-to-cart-button">Ajouter au panier</a>
+                </div>
+            <!-- Ajouter d'autres produits en promotion ici -->
+        </div>
+    </section>
+    <section id="cart" style="display: none;">
+        <h2>Votre Panier</h2>
+        <div id="cart-items">
+            <p>Votre panier est vide.</p>
+        </div>
+        <p id="total"></p>
+        <button id="checkout-button" style="display: none;">Passer à la caisse</button>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Bling Bling Shop. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
